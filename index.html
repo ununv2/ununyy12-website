@@ -3,45 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ununnn__</title>
+    <link rel="icon" type="image/x-icon" href="images/ouan.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="keywords" content="Unun YY">
     <meta name="description" content="Portfolio Website for ununyy12, a content creator on Youtube, part-time vtuber, and university student">
-    <title>ununnn__</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    
+    <meta property="og:local" content="th_TH" />
+    <meta property="og:url" content="https://unchasa.in.th/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ununnn__" />
+    <meta property="og:image" content="images/ouan.png" />
+    <meta property="og:url" content="https://unchasa.in.th/" />
+
 </head>
 <body>
+    <script>
+        function toggleFullScreen() {
+          document.getElementById('fullScreenElement1').requestFullscreen()
+          document.getElementById('hidden').classList.remove('hidden');
+        }
+        document.addEventListener("fullscreenchange", (event) => {
+            if (!document.fullscreenElement) {
+                document.getElementById('hidden').classList.add('hidden');
+            }
+        })
+    </script>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav data-aos="fade-up" data-aos-duration="2000">
                 <img src="images/mcpfp - 12Unun.png" class="logo" alt="A photo of ununnn__">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Studies</a></li>    
-                </ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#">???</a></li>    
+                
 
             </nav>
         </div>
-        <div class="header-text">
-            <h1>welcome to<br><span>ununyy12's</span> portfolio</h1>
+        <div class="header-text" data-aos="fade-left" data-aos-duration="2000">
+            <div class="header-top">
+                <h1>welcome to</h1>
+                <p><span>ununyy12's</span> portfolio</p>
+            </div>
+            <a href="https://www.youtube.com/channel/UC_UDG9Kau_HJL9dd0QItJVg">
+                <button class="youtube-button">Click me</button>
+              </a>
         </div>
-        <a href="https://www.youtube.com/channel/UC_UDG9Kau_HJL9dd0QItJVg">
-            <button class="youtube-button">Click me</button>
-          </a>
     </div>
-    <div id="about">
-        <div class="container">
+    <div id="about" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-about">
             <div class="row">
-                <div class="about-col-1"></div>
-                <div class="about-col-2"></div>
+                <div class="about-col-1">
+                    <div id="fullScreenElement1" class="button" onclick="toggleFullScreen()">
+                        <p id="hidden" class="hidden"><img class="hidden-active" src="images/ouan.png" alt=""></p>
+                    <img class="aboutmepic" src="images/aboutmepic.png" alt="aboutmepic">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor architecto deserunt magnam mollitia deleniti, ex fugiat esse voluptate, velit sed sunt quaerat officiis at reiciendis consequuntur ipsa vitae tempore optio?</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Website Interfaces</li>
+                            <li><span>Web Development</span><br>Write wasd coding</li>
+                            <li><span>Sleeping is my life</span><br>My life style</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2000</span><br>22222222222222222222222222222</li>
+                            <li><span>2000-2001</span><br>33333333333333</li>
+                            <li><span>2001-2002</span><br>44444444444</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>123123</span><br>asdasdasdasdasd</li>
+                            <li><span>123123-2001</span><br>33333333333333</li>
+                            <li><span>123123-2002</span><br>44444444444</li>
+                        </ul>
+                    </div>
+                </div>
                 
             </div>
             
         </div>
     </div>
     
+    <div id="project" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-about">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="images/project1.png" alt="proj1">
+                    <div class="layer">
+                        <h3>FriendscraftSMP SS3</h3>
+                        <p>Highschool Bodyguard Un</p>
+                        <a href="#"><i class="fa fa-hand-o-up"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project2.png" alt="">
+                    <div class="layer">
+                        <h3>FriendscraftSMP SS4</h3>
+                        <p>True Legend Anasthesia</p>
+                        <a href="#"><i class="fa fa-hand-o-up"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project3.png" alt="">
+                    <div class="layer">
+                        <h3>Detective Academy</h3>
+                        <p>Anna Stefa</p>
+                        <a href="#"><i class="fa fa-hand-o-up"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project4.png" alt="">
+                    <div class="layer">
+                        <h3>Detective Academy</h3>
+                        <p>Anna Stefa</p>
+                        <a href="#"><i class="fa fa-hand-o-up"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project5.png" alt="">
+                    <div class="layer">
+                        <h3>Detective Academy</h3>
+                        <p>Anna Stefa</p>
+                        <a href="#"><i class="fa fa-hand-o-up"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project6c.png" alt="">
+                    <div class="layer">
+                        <h3>Detective Academy</h3>
+                        <p>Anna Stefa</p>
+                        <a href="#"><i class="fa fa-hand-o-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Back to Top</a>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
